@@ -12,7 +12,7 @@ This admin template on other platforms and frameworks and we'll be happy to shar
 
 ## Theme Demo
 
-![Cloud Services Framework Architect](https://fundacionjesusdenazareth.org/css/banner/ServicesCloud-SolutionArquitect.jpeg "Cloud Services Framework Architect Preview")
+![Cloud Services Framework Architect](http://fundacionjesusdenazareth.org/css/banner/ServicesCloud-SolutionArquitect.jpeg "Cloud Services Framework Architect Preview")
 
 ## Table of contents
 
@@ -40,9 +40,9 @@ To download github repository
 ```
 git clone https://github.com/davith01/cloud-services.git
 ```
-
+```
 cd /Users/user/cloud-services
-
+```
 **Bower**
 
 To install libreries asset/vendors
