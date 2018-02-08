@@ -71,7 +71,7 @@ node index.js
 Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://getbootstrap.com>. The docs may also be run locally.
 
 
-## Scripts included:
+## Script included
 
 * Bootstrap
 * Font Awesome
