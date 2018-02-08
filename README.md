@@ -20,7 +20,6 @@ This admin template on other platforms and frameworks and we'll be happy to shar
 * [Documentation](#documentation)
 * [Scripts included](#script-included)
 * [Versioning](#versioning)
-* [Creators](#creators)
 * [Copyright and license](#copyright-and-license)
 
 
