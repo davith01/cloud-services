@@ -1,0 +1,28 @@
+{
+	"working-group": {
+		"index": {
+			"href": "#!/workingGroup",
+			"icon": "fa fa-users",
+			"title": "WorkingGroup",
+			"category": "Configuration"
+		},
+		"get": {
+			"href": "#!/workingGroup/get",
+			"controller": "workingGroupCtrl"
+		}
+	},
+	"user-system": {
+		"index": {
+			"href": "#!/userSystem",
+			"icon": "fa fa-user",
+			"label": "UsersSystem",
+			"category": "Configuration"
+		},
+		"get": {
+			"href": "#!/userSystem/get"
+		},
+		"set": {
+			"href": "#!/userSystem/set"
+		}
+	}
+}

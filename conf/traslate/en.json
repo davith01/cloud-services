@@ -1,0 +1,70 @@
+{
+	"app": {
+		"language": "en",
+		"name": "Skol&Serna",
+		"title": "Sistema de gestión de Riesgos",
+		"copyRigth": "2017 All Rights Reserved. Skol&Serna LTDA!"
+	},
+	"modules": {
+		"home": {
+			"index"	: {
+				"title_left": "",
+				"title_left_small": "",
+				"sub_title_left": "Panel de control",
+				"sub_title_left_small": "módulos y servicios disponibles"
+			}
+		},
+		"user_system": {
+			"index": {
+				"title_left": "Configuration",
+				"title_left_small": "usuarios del sistema",
+				"sub_title_left": "Lista de usuarios",
+				"sub_title_left_small": "información de contactos"
+			}
+		}
+	},
+	"traslate": {
+		"Welcome": "Welcome",
+		"Username": "User name",
+		"Password": "Password",
+		"Login_Form": "Login Form",
+		"Log_In": "Log In",
+		"Log_Out": "Log Out",
+		"Lost_Your_Password": "Recuperar contraseña",
+		"NewToSite": "Nuevo en este sitio",
+		"AlreadyaMember": "Ya es un miembro",
+		"Create_Account": "Crear Cuenta",
+		"Email": "Email",
+		"PrivacityAndTerms": "Términos y Condiciones",
+		"FormSearch": "Formulario de Consulta",
+		"SeachObjectiveType": "Búsqueda de personas comprometidas",
+		"Submit": "Enviar",
+		"General": "General",
+		"Administration" : "Administration",
+		"Configuration" : "Configuration",
+		"Users" : "Users",
+		"UsersAccount" : "Users account ",
+		"UsersSystem" : "Users of system",
+		"Roles": "Roles",
+		"UserRoles": "User Roles",
+		"Settings": "Settings",
+		"Profile": "Profile",
+		"Help": "Ayuda",
+		"FullScreen": "Pantalla Completa",
+		"LockSession": "Bloquear",
+		"Logout": "Salir",
+		"PasswordRequired": "Contraseña requerida",
+		"UserNameRequired": "User name required",
+		"UserOrPasswordInvalid": "Usuario o Constraseña inválidos",
+		"ErrortoinvokeServices": "Error invocando servicio",
+		"UserOrPasswordRequiered": "Usuario y Constraseña requeridos",
+		"LogOutSuccess" : "Sesión finalizada exitosamente",
+		"Services": "Servicios",
+		"Language": "Language",
+		"LanguageSelection":"Selección de Lenguaje",
+		"Spanish":"Español",
+		"English":"Inglés",
+		"Save":"Guardar",
+		"Close":"Cerrar"
+	}
+}

@@ -1,0 +1,38 @@
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+<% if(session.menu && session.menu.sections && session.menu.sections.length > 0) {%>
+  <div class="menu_section">
+  <% session.menu.sections.forEach(function(section){ %>
+  
+	<h3>{{view.traslate.<%= section.label %>}}</h3>
+	<ul class="nav side-menu">
+	<% if(section.sideMenu) {%>
+	  <% section.sideMenu.forEach(function(sideMenu){ %>
+	  <li><a><i class="<%= sideMenu.icon %>"></i> {{view.traslate.<%= sideMenu.label %>}} <% if(sideMenu.childMenu) {%> <span class="fa fa-chevron-down"></span> <%}%> </a>
+		<% if(sideMenu.childMenu) {%>
+		<ul class="nav child_menu">
+		  <% sideMenu.childMenu.forEach(function(childMenu){ %>
+		  <% if(childMenu.route){%>
+			<li><a 	href="<%=childMenu.route.href %>">{{view.traslate.<%=childMenu.label%>}}</a></li>
+		  <%} else if(childMenu.subChildMenu){%>
+			<li>
+			<a>{{view.traslate.<%=childMenu.label%>}}<span class="fa fa-chevron-down"></span></a>
+			  <ul class="nav child_menu">
+			  <% childMenu.subChildMenu.forEach(function(subChildMenu){ %>
+				<li class="sub_menu">
+				  <a href="<%=subChildMenu.href %>"> {{view.traslate.<%= subChildMenu.label %>}} </a>
+				</li>
+			  <%});%>  
+			  </ul>
+			</li>
+		  <%}%>
+		  <%});%>	
+		</ul>
+		<%}%>
+	  </li>
+	  <%});%>
+    <%}%> 
+	</ul>
+  <%});%>
+  </div>
+<% } %>
+</div>

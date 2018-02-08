@@ -1,0 +1,5 @@
+{
+	"directory": "assets/vendors",
+	"proxy":"http://172.22.84.11:9128",
+    "https-proxy":"http://172.22.84.11:9128"
+}

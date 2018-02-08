@@ -1,0 +1,28 @@
+{
+  "name": "cloud-skol",
+  "version": "0.1.0",
+  "dependencies": {
+    "angular": "^1.6.7",
+    "angular-route": "^1.6.7",
+    "bootstrap": "^3.3.7",
+    "bootstrap-tag": "^0.0.1",
+    "fastclick": "^1.0.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "nprogress": "^0.2.0",
+    "typeahead.js": "^0.11.1",
+    "chart.js": "Chart.js#^2.7.1",
+    "bootstrap-treeview": "^1.2.0",
+    "datatables.net": "^1.10.16",
+    "datatables.net-bs": "^2.1.1",
+    "datatables.net-buttons": "^1.4.2",
+    "datatables.net-buttons-bs": "^1.4.2",
+    "datatables.net-fixedheader": "^3.1.3",
+    "datatables.net-fixedheader-bs": "^3.1.3",
+    "datatables.net-keytable": "^2.3.2",
+    "datatables.net-responsive": "^2.2.0",
+    "datatables.net-responsive-bs": "^2.2.0",
+    "datatables.net-scroller": "^1.4.3",
+    "datatables.net-scroller-bs": "^1.4.3"
+  }
+}

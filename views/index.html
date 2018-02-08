@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CloudSkol" ng-controller="index">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{view.app.title}}! </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../vendors/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">	
+	<!-- Bootstrap Tagsinput -->
+	<link href="../vendors/bootstrap-tag/docs/assets/css/bootstrap-tag.css" rel="stylesheet">	
+	
+	<!-- Datatables -->
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Gentelella Theme Style -->
+    <link href="../css/custom.css" rel="stylesheet">
+	
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="{{view.company.website}}" class="site_title"><i class="fa fa-paw"></i> 
+			   <span>{{view.app.name}}!</span>
+			  </a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+			<%- include("templates/profile-quick-info.html",{"session":session}); -%>
+			<!-- /menu profile quick info -->
+			
+            <br />
+
+            <!-- sidebar menu -->
+			<%- include("templates/sidebar-menu.html",{"session":session}); -%>
+            <!-- /sidebar menu -->
+			
+
+            <!-- /menu footer buttons -->
+			<%- include("templates/footer-buttons.html"); -%>
+            <!-- /menu footer buttons -->
+			
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <%- include("templates/top-navigation.html",{"session":session}); -%>
+		<!-- /top navigation -->
+		
+		<!-- traslate modal -->
+		<%- include("templates/traslate-modal.html"); -%>
+		<!-- /traslate modal -->
+		
+        <!-- page content -->
+		<div ng-view></div>
+        <!-- /page content -->
+		
+		<!-- page content ->
+		<div ui-view></div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+		<%- include("templates/footer.html"); -%>
+        <!-- /footer content -->
+		
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- Angujar Js --> 
+	<script src="../vendors/angular/angular.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+	<!-- ngRoute --> 
+	<script src="../vendors/angular-route/angular-route.min.js"></script>
+	<!-- ui Route -> 
+	<script src="../vendors/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<!-- twitter typeahead -->
+    <script src="../vendors/typeahead.js/dist/typeahead.bundle.min.js"></script>
+	<!-- bootstrap-tagsinput -->
+	<script src="../vendors/bootstrap-tag/js/bootstrap-tag.js"></script>
+	<!-- Gentelella Theme Scripts -->
+    <script src="../js/custom.js"></script>	
+	
+	<!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+	
+	<!-- Scripts -->
+	<script src="../js/index.js"></script>
+	<script src="../js/AjaxServices.js"></script>
+	<script src="../js/services.js"></script>
+	<script src="../js/router.js"></script>
+	<!-- Scripts -->
+	
+  </body>
+</html>

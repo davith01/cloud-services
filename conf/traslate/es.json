@@ -1,0 +1,85 @@
+{
+	"app": {
+		"language": "es",
+		"name": "Skol&Serna",
+		"title": "Sistema de gestión de Riesgos",
+		"copyRigth": "2017 All Rights Reserved. Skol&Serna LTDA!"
+	},
+	"modules": {
+		"home": {
+			"index"	: {
+				"title_left": "",
+				"title_left_small": "",
+				"sub_title_left": "Panel de control",
+				"sub_title_left_small": "módulos y servicios disponibles"
+			}
+		},
+		"user_system": {
+			"index": {
+				"title_left": "Configuración",
+				"title_left_small": "usuarios del sistema",
+				"sub_title_left": "Lista de usuarios",
+				"sub_title_left_small": "información de contactos"
+			}
+		}
+	},
+	"traslate": {
+		"Welcome": "Bienvenido",
+		"Username": "Nombre de usuario",
+		"Password": "Contraseña",
+		"Login_Form": "Formulario de Ingreso",
+		"Log_In": "Ingresar",
+		"Log_Out": "Salir",
+		"Lost_Your_Password": "Recuperar contraseña",
+		"NewToSite": "Nuevo en este sitio",
+		"AlreadyaMember": "Ya es un miembro",
+		"Create_Account": "Crear Cuenta",
+		"Email": "Email",
+		"PrivacityAndTerms": "Términos y Condiciones",
+		"FormSearch": "Formulario de Consulta",
+		"SeachObjectiveType": "Búsqueda de personas comprometidas",
+		"Submit": "Enviar",
+		"General": "General",
+		"Administration" : "Administración",
+		"Configuration" : "Configuración",
+		"Users" : "Usuarios",
+		"UsersAccount" : "Cuentas de usuario",
+		"UsersSystem" : "Usuarios de sistema",
+		"User": "Usuario",
+		"Roles": "Roles",
+		"Rol": "Rol",
+		"UserRoles": "Roles de Usuario",
+		"Settings": "Configuración",
+		"Profile": "Perfíl",
+		"Help": "Ayuda",
+		"FullScreen": "Pantalla Completa",
+		"LockSession": "Bloquear",
+		"Logout": "Salir",
+		"PasswordRequired": "Contraseña requerida",
+		"UserNameRequired": "Nombre de usuario requerido",
+		"UserOrPasswordInvalid": "Usuario o Constraseña inválidos",
+		"ErrortoinvokeServices": "Error invocando servicio",
+		"UserOrPasswordRequiered": "Usuario y Constraseña requeridos",
+		"LogOutSuccess" : "Sesión finalizada exitosamente",
+		"Services": "Servicios",
+		"Language": "Lenguage",
+		"LanguageSelection":"Selección de Lenguaje",
+		"Spanish":"Español",
+		"English":"Inglés",
+		"Save":"Guardar",
+		"Close":"Cerrar",
+		"WorkingGroup": "Grupos de trabajo",
+		"Accessdenied": "Acceso denegado",
+		"FullAuthenticationIsRequiredToAccessThisResource": "Autenticación requerida para acceder a este recurso",
+		"Go": "Ir",
+		"OneErrorWasHappend": "Ha ocurrido un error",
+		"UserSystemList": "Lista de usuarios del sistema",
+		"Name":"Nombre",
+		"Icon":"Icono",
+		"ContactNumber":"Número contacto",
+		"ContactAddress":"Dirección de contacto",
+		"ThisTableConteintSystemUserInformation":"Esta tabla contiene la información de los usuarios registrados en el sistema",
+		"Actions":"Acciones",
+		"Action":"Acción"
+	}
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CloudSkol" ng-controller="index">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{view.app.title}}!</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Gentelella Theme Style -->
+    <link href="../css/custom.css" rel="stylesheet">
+  </head>
+
+  <body class="login">
+    <div id="target">
+		<!-- traslate modal -->
+		<%- include("templates/traslate-modal.html"); -%>
+		<!-- /traslate modal -->
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+
+      <div class="login_wrapper">
+		
+		<ul class="nav aling-right">
+			<li class="dropdown-menu z-index button-traslate">
+			  <a id="languageBtn" data-toggle="modal" data-target=".traslate-modal">
+				<span class="badge bg-red pull-right">{{view.app.language}}</span>
+				<span>{{view.traslate.Language}}</span>
+			  </a>
+			</li>
+		</ul>
+		
+  
+        <div class="animate form login_form">
+          <section class="login_content">
+            <form id="loginForm">
+              <h1>{{view.traslate.Login_Form}}</h1>
+              <div>
+                <input id="userNameInput" required="required" type="text" class="form-control" placeholder="{{view.traslate.Username}}" />
+              </div>
+              <div>
+                <input id="userPasswordInput" class="form-control" type="password" required="required" placeholder="{{view.traslate.Password}}" />
+              </div>
+              <div>
+                <button id="idLogInBtn" type="button" class="btn btn-success">{{view.traslate.Log_In}}</button>
+                <a class="reset_pass">{{view.traslate.Lost_Your_Password}}</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">{{view.traslate.NewToSite}}?
+                  <a href="#signup" class="to_register"> {{view.traslate.Create_Account}} </a>
+                </p>
+
+                <div class="clearfix"></div>
+                <br/>
+				
+				<!-- message notification -->
+				<%- include("templates/message-notification.html",{"id":"login-message"}); -%>
+				<!-- message notification -->
+				
+                <div>
+                  <h1><i class="fa fa-paw"></i> {{view.app.name}}!</h1>
+                  <p>©{{view.app.copyRigth}}</p>.
+				  <p><small>{{view.traslate.PrivacityAndTerms}}</small></p>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <div id="register" class="animate form registration_form">
+          <section class="login_content">
+            <form>
+              <h1>{{ view.traslate.Create_Account}}</h1>
+              <div>
+                <input type="text" class="form-control" placeholder="{{view.traslate.Username}}" required="" />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="{{view.traslate.Email}}" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="{{view.traslate.Password}}" required="" />
+              </div>
+			  <div>
+                <button id="idCreateBtn" type="button" class="btn btn-success">{{view.traslate.Submit}}</button>
+              </div>
+              
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">{{view.traslate.AlreadyaMember}} ?
+                  <a href="#signin" class="to_register"> {{view.traslate.Log_In}} </a>
+                </p>
+
+                <div class="clearfix"></div>
+                <br />
+
+				<!-- message notification -->
+				<%- include("templates/message-notification.html",{"id":"register-message"}); -%>
+				<!-- message notification -->
+				
+				<div>
+                  <h1><i class="fa fa-paw"></i> {{view.app.name}}!</h1>
+                  <p>©{{view.app.copyRigth}}</p>.
+				  <p><small>{{view.traslate.PrivacityAndTerms}}</small></p>
+                </div>
+				
+              </div>
+            </form>
+          </section>
+        </div>
+		
+      </div>
+    </div>
+
+	<!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- Angujar Js --> 
+	<script src="../vendors/angular/angular.min.js"></script>
+	<script src="../vendors/angular/angular-animate.min.js"></script>
+	<script src="../vendors/angular/angular-messages.min.js"></script>
+	<!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+	<!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+	<!-- Parsley -->
+    <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+	<!-- Mustache -->
+    <script src="../vendors/mustache/mustache.js"></script>
+
+	<!-- Scripts -->
+	<script src="../js/aes-js.js"></script>
+	<script src="../js/utils.js"></script>
+	<script src="../js/message.js"></script>
+	<script src="../js/login.js"></script>
+	<script src="../js/services.js"></script>
+	<!-- Scripts -->
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+	"sections":  [
+		{ 	"label": "General",
+			"sideMenu": [
+				{   "label": "Administration",
+					"icon": "fa fa-windows",
+					"childMenu": [
+						{   "label": "Configuration",
+							"subChildMenu": [
+								{
+								  "label": "UserRoles",
+								  "href": "#!/roleSystem"
+								},
+								{
+								  "label": "UsersSystem",
+								  "href": "#!/userSystem"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
